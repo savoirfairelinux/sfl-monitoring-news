@@ -45,7 +45,6 @@ h6 {
   margin: 0;
   color: #53AFC9;
   font-family: Ubuntu Light, sans-serif;
-
 }
 a {
   font-weight: bold;
@@ -83,9 +82,11 @@ div.header{
   width: 80%;
   min-width: 480px;
   margin: 20px auto 0px auto;
-  font-size: 14px;
+  font-size: 400%;
   line-height: 0px;
   text-align: right;
+  color: white;
+  font-family: Ubuntu Light, sans-serif;
 }
 div.footer {
   width: 80%;
@@ -563,18 +564,7 @@ div.body div.math p {
 span.eqno {
   float: right;
 }
+
 /* -- printout stylesheet --------------------------------------------------- */
 @media print {
-  div.document,
-  div.documentwrapper,
-  div.bodywrapper {
-    margin: 0 !important;
-    width: 100%;
-  }
-  div.sphinxsidebar,
-  div.related,
-  div.footer,
-  #top-link {
-    display: none;
-  }
 }
