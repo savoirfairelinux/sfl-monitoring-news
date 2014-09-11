@@ -1,0 +1,35 @@
+{%- extends "basic/layout.html" %}
+
+{%- block doctype -%}
+<!DOCTYPE html>
+{%- endblock %}
+
+{% block extrahead %}
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
+{% endblock %}
+
+{% set metatags = '<meta name="viewport" content="width=device-width, initial-scale=1.0">' %}
+{% set favicon = 'sfl.ico' %}
+
+{%- block header %}
+    <div class="header" style="position: relative; left: 0; top: 0;">
+        <img src="_static/header.jpg" alt="header" width="100%" style="position: relative; top: 0; left: 0;">
+        <img src="_static/sfl.png" height="35%" alt="Savoir-Faire Linux" style="position: absolute; top: 35%; left: 70%;">
+    </div>
+{%- endblock %}
+
+{%- block content %}
+    <div class="document">
+        {%- block document %}
+            <div class="body">
+                {% block body %}{% endblock %}
+            </div>
+        {%- endblock %}
+    </div>
+{%- endblock %}
+
+{%- block footer %}
+    <div class="footer">
+        <img src="_static/header.jpg" alt="header"  height="5%" width="100%">
+    </div>
+{%- endblock %}
