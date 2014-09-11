@@ -47,6 +47,12 @@ h6 {
   color: #53AFC9;
   font-family: Ubuntu Light, sans-serif;
 }
+h1:after
+{
+    content:' ';
+    display:block;
+    border:1px solid #53AFC9;
+}
 a {
   font-weight: bold;
   color: #799b48;
