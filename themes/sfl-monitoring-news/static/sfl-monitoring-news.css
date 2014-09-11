@@ -91,10 +91,12 @@ div.header{
 }
 div.footer {
   width: 80%;
+  max-height: 100px;
   min-width: 480px;
   margin: 0px auto 30px auto;
   font-size: 14px;
   text-align: right;
+  overflow: hidden;
 }
 /* -- relbar ---------------------------------------------------------------- */
 div.related {
