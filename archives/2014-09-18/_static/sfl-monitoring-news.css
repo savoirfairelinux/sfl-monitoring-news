@@ -13,6 +13,9 @@
 body {
   width: 100%;
   *zoom: 1;
+  max-width:950px;
+  margin-right:auto;
+  margin-left:auto;
 }
 body:before,
 body:after {
@@ -30,7 +33,6 @@ body:after {
 ================================================== */
 /* -- globals ----------------------------------------------------------- */
 body {
-  margin: 10px 0;
   font-family: Ubuntu, sans-serif;
   font-size: 13px;
   line-height: 24px;
