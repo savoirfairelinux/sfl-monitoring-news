@@ -1,5 +1,6 @@
 # Makefile for Sphinx documentation
-#
+
+ISSUE_DATE = $(shell date "+%Y-%m-%d")
 
 # You can set these variables from the command line.
 SPHINXOPTS    =
@@ -28,4 +29,11 @@ singlehtml:
 	$(SPHINXBUILD) -b singlehtml $(ALLSPHINXOPTS) $(BUILDDIR)/singlehtml
 	@echo
 	@echo "Build finished. The HTML page is in $(BUILDDIR)/singlehtml."
+
+publish: clean html
+	git checkout gh-pages
+	-mkdir -p archives/$(ISSUE_DATE)
+	-cp -r build/html/* archives/$(ISSUE_DATE)
+	-git add archives/$(ISSUE_DATE)
+	-git commit
 
