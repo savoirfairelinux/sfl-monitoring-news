@@ -36,4 +36,4 @@ publish: clean html
 	-cp -r build/html/* archives/$(ISSUE_DATE)
 	-git add archives/$(ISSUE_DATE)
 	-git commit
-
+	echo "The issue will be available at: http://savoirfairelinux.github.io/sfl-monitoring-news/archives/$(ISSUE_DATE)"
