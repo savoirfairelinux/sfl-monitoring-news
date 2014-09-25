@@ -322,16 +322,6 @@ div.highlight-python pre {
   -moz-border-radius: 5px;
   border-radius: 5px;
 }
-/* -- math display ---------------------------------------------------------- */
-img.math {
-  vertical-align: middle;
-}
-div.body div.math p {
-  text-align: center;
-}
-span.eqno {
-  float: right;
-}
 
 /* -- printout stylesheet --------------------------------------------------- */
 @media print {
