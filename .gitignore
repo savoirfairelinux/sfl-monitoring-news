@@ -1,4 +1,4 @@
 env
 build
 *.egg-info
-
+*.swp

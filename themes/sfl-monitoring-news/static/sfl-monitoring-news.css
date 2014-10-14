@@ -70,6 +70,10 @@ div.document {
   -moz-column-count: 2; /* Firefox */
   column-count: 2;
 }
+div.section {
+    padding-top: 15px;
+}
+
 div.documentwrapper {
   display: inline;
   float: left;
@@ -82,7 +86,7 @@ div.bodywrapper {
   margin: 0;
 }
 div.body {
-  padding: 10px 30px;
+  padding: 0px 30px;
 }
 div.clearer {
   clear: both;
