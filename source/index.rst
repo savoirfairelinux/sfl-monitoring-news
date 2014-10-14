@@ -1,32 +1,17 @@
-Article1
---------
+Nouveautés logicielles
+----------------------
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+* Shinken : `Le framework de supervision <http://www.shinken-monitoring.org>`_ a sorti plus tôt cette année une version 2.0 attendu depuis plusieurs mois. De grosses modifications ont été apportées depuis la version 1.4 : le découpage des modules et du coeur de la solution, l'utilisation de HTTP pour les communication inter démon et le changement des chemins d'installation par défaut. Actuellement, la branche principale est en version 2.0.3 et inclue beaucoup de corrections ainsi que des refonte de code sur la phase de lecture de configuration. 
 
-
-
-Article2
---------
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+* Adagios : `L'interface de configuration et visualisation <http://adagios.org>`_ a mis en ligne la version 1.6.0 du projet fin aout de cette année. Les principales améliorations sont : le support de l'interface `Multisite <http://mathias-kettner.com/check_mk_introduction.html>`_ (beta), l'intégration native de `Graphite <https://github.com/graphite-project/graphite-web>`_ et le support des préférences utilisateurs. En ce qui concerne la branche principale developpement, une migration de `Django <https://www.djangoproject.com/>`_ version 1.4 vers 1.6 est en cours. 
 
 
-Article3
---------
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-Article4
---------
+Développments SFL
+-----------------
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+* Check_hydro_quebec : Nouveau plugin réalisé par l'équipe de supversion. Il récupère les informations disponibles sur le site d'`Hydro Québec <http://pannes.hydroquebec.com/pannes/bilan-interruptions-service/>`_ à propos des pannes en cours dans les différentes provinces du Canada. Il sera bientot disponible sur `Quebec24x7 <http://quebec247.org>`_
 
-Article5
---------
+* Supervision de génératrices éléctriques : Suite à une demande client, l'équipe de supervision doit récupérer des métriques depuis des groupes électrogènes de marque Cat®. Le début du développement est prévu pour bientôt. 
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-Article6
---------
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
