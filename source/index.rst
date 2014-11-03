@@ -11,7 +11,22 @@ Nouveautés logicielles
 Développments SFL
 -----------------
 
-* Check_hydro_quebec : Nouveau plugin réalisé par l'équipe de supversion. Il récupère les informations disponibles sur le site d'`Hydro Québec <http://pannes.hydroquebec.com/pannes/bilan-interruptions-service/>`_ à propos des pannes en cours dans les différentes provinces du Canada. Il sera bientot disponible sur `Quebec24x7 <http://quebec247.org>`_
+* Check_hydro_quebec : Nouveau plugin réalisé par l'équipe de supervision. Il récupère les informations disponibles sur le site d'`Hydro Québec <http://pannes.hydroquebec.com/pannes/bilan-interruptions-service/>`_ à propos des pannes en cours dans les différentes provinces du Canada. Il sera bientot disponible sur `Quebec24x7 <http://quebec247.org>`_
 
 * Supervision de génératrices éléctriques : Suite à une demande client, l'équipe de supervision doit récupérer des métriques depuis des groupes électrogènes de marque Cat®. Le début du développement est prévu pour bientôt. 
+
+
+
+Événements à venir
+------------------
+
+Création d'un Meetup autour de la supervision à Montréal pour bientôt. L'objectif étant de faire le premier avant la fin de cette année. On espère vous voir nombreux. Plus d'information sur la `page <http://www.meetup.com/members/21695861/>`_ de Savoir-faire Linux sur Meetup.
+
+
+Revue d'évenements
+------------------
+
+* MTL Data : Données ouvertes de la ville de Montréal
+  Le Mercredi 22 octobre a eut lieu un meetup autour des données ouvertes de la ville ouvertes. Il était question de présenter l'avancement du processus d'ouverture de donnée. Ce qui en est ressorti et que l'ouverture de données est un enjeu avant tout politique et pas technique. En effet, il était question de négociations entre plusieurs acteurs, notamment les fournisseurs (créateurs de données). Ce constat est très intéressant pour la supervision si on le rapproche au projet `quebec247 <http://quebec247.org>`_, car il utilise des données publiques. La problématique d'ouverture seule traité lors de ce meetup est la même en supervision et en analyse de données. L'utlisation en sera par contre différente. 
+
 
