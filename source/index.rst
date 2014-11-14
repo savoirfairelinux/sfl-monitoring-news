@@ -59,10 +59,10 @@ Revue d'évenements
   données. L'utilisation en sera par contre différente. 
 
 
-.. _Shinken: http://www.shinken-monitoring.org>
+.. _Shinken: http://www.shinken-monitoring.org
 .. _Adagios: http://adagios.org
 .. _Graphite: https://github.com/graphite-project/graphite-web
 .. _Django: https://www.djangoproject.com
-.. _page: www.meetup.com/Montreal-Monitoring
+.. _page: http://www.meetup.com/Montreal-Monitoring
 .. _Hydro Québec: http://pannes.hydroquebec.com/pannes/bilan-interruptions-service
 .. _Quebec24x7: http://quebec247.org
