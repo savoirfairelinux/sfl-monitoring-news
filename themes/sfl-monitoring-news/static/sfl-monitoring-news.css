@@ -51,8 +51,7 @@ h1:after
     border:1px solid #53AFC9;
 }
 a {
-  font-weight: bold;
-  color: #799b48;
+  color: #369;
 }
 a.active,
 a:hover {
