@@ -1,8 +1,7 @@
 Nouveautés logicielles
 ----------------------
 
-* `Shinken`_ : Le framework de supervision
-  a sorti plus tôt cette année une version 2.0 attendu depuis plusieurs mois.
+* `Shinken`_ : la version 2.0 attendue depuis plusieurs mois est sortie cet été.
   De grosses modifications ont été apportées depuis la version 1.4 : le découpage
   des modules et du coeur de la solution, l'utilisation de HTTP pour les
   communications inter démon et le changement des chemins d'installation
