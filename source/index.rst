@@ -46,7 +46,7 @@ Développments SFL
 Revue d'évenements
 ------------------
 
-* MTL Data : Données ouvertes de la ville de Montréal. Le Mercredi 22 octobre
+* `MTL Data`_ - Données ouvertes de la ville de Montréal. Le Mercredi 22 octobre
   a eu lieu un meetup autour des données ouvertes de la ville. Il était question
   de présenter l'avancement du processus d'ouverture des données. Ce qui en est
   ressorti est que l'ouverture des données est un enjeu avant tout politique et
@@ -65,3 +65,4 @@ Revue d'évenements
 .. _page: http://www.meetup.com/Montreal-Monitoring
 .. _Hydro Québec: http://pannes.hydroquebec.com/pannes/bilan-interruptions-service
 .. _Quebec24x7: http://quebec247.org
+.. _MTL Data: http://www.meetup.com/mtldata/events/211874062/
