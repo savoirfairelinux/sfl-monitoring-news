@@ -20,13 +20,13 @@ Développments SFL
 Événements à venir
 ------------------
 
-Création d'un Meetup autour de la supervision à Montréal pour bientôt. L'objectif étant de faire le premier avant la fin de cette année. On espère vous voir nombreux. Plus d'information sur la `page <http://www.meetup.com/members/21695861/>`_ de Savoir-faire Linux sur Meetup.
+* Création d'un Meetup autour de la supervision à Montréal. La date retenue pour le meetup est le mercredi 3 décembre à 18h. On espère vous voir nombreux dans les locaux de SFL. Plus d'information sur la `page <www.meetup.com/Montreal-Monitoring/>`_ du Meetup.
 
 
 Revue d'évenements
 ------------------
 
 * MTL Data : Données ouvertes de la ville de Montréal
-  Le Mercredi 22 octobre a eut lieu un meetup autour des données ouvertes de la ville ouvertes. Il était question de présenter l'avancement du processus d'ouverture de donnée. Ce qui en est ressorti et que l'ouverture de données est un enjeu avant tout politique et pas technique. En effet, il était question de négociations entre plusieurs acteurs, notamment les fournisseurs (créateurs de données). Ce constat est très intéressant pour la supervision si on le rapproche au projet `quebec247 <http://quebec247.org>`_, car il utilise des données publiques. La problématique d'ouverture seule traité lors de ce meetup est la même en supervision et en analyse de données. L'utlisation en sera par contre différente. 
+  Le Mercredi 22 octobre a eu lieu un meetup autour des données ouvertes de la ville. Il était question de présenter l'avancement du processus d'ouverture des données. Ce qui en est ressorti est que l'ouverture des données est un enjeu avant tout politique et non technique. En effet, il était question de négociations entre plusieurs acteurs, notamment les fournisseurs (créateurs de données). Ce constat est très intéressant pour la supervision si on le rapproche au projet `quebec247 <http://quebec247.org>`_, car il utilise des données publiques. La problématique d'ouverture seule traité lors de ce meetup est la même en supervision et en analyse de données. L'utlisation en sera par contre différente. 
 
 
