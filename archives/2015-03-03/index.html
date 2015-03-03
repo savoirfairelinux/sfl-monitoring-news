@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nouveautés logicielles &mdash; Sfl Monitoring News 0.1 documentation</title>
+    
+    <link rel="stylesheet" href="_static/sfl-monitoring-news.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="shortcut icon" href="_static/sfl.ico"/>
+    <link rel="top" title="Sfl Monitoring News 0.1 documentation" href="#" />
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
+
+  </head>
+  <body>
+    <div class="header" style="position: relative; left: 0; top: 0;">
+        <img src="_static/header.jpg" alt="header" width="100%" style="position: relative; top: 0; left: 0;">
+        <div style="position: absolute; top: 50%; left: 2.5%;">SUPERVISION</div>
+        <img src="_static/sfl.png" height="35%" alt="Savoir-Faire Linux" style="position: absolute; top: 35%; left: 70%;">
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li><a href="#">Sfl Monitoring News 0.1 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="document">
+            <div class="body">
+                
+  <div class="section" id="nouveautes-logicielles">
+<h1>Nouveautés logicielles<a class="headerlink" href="#nouveautes-logicielles" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><a class="reference external" href="http://www.shinken-monitoring.org">Shinken</a> : la version 2.2 est sortie le 16 janvier 2015.
+D&#8217;importants changements ont été faits depuis la version 2.0 : la lecture
+de la configuration a été retravaillée, corrections de nombreux bugs, amélioration de la
+documentation, ajout d&#8217;une fonctionnalité de snapshot lors d&#8217;un problème
+Actuellement, la branche principale est en développement pour la version 2.4 et inclue majoritairement
+du nettoyage de code. La prochaine version de Shinken est prévu pour le 31 mars 2015.
+Les prochaines releases devraient être plus fréquentes par la suite : une tous les trois mois.</li>
+<li><a class="reference external" href="http://influxdb.com">InfluxDB</a> : InfluxDB est une technologie de base de données du type TSDB (time series database).
+Elle est écrite en Go et correspond parfaitement aux besoins rencontrés en supervision.
+La version 0.9 Beta est sortie en décembre avec la gestion de clustering et de tags.
+Cette version intègre de gros changements dans l&#8217;API d&#8217;influxdb et dans les concepts.
+La nouveauté sur les tags est très intéressante pour la supervision car elle permet d&#8217;ajouter
+des filtres facilement.</li>
+<li><a class="reference external" href="https://grafana.org">Grafana</a> : Grafana est une technologie de dashboard et de graphique avec des grandes capacités.
+Elle possède une intégration native avec InfluxDB et Graphite. La dernière version stable est 1.9.0
+Pour la version 2.0, le support d&#8217;autres bases de données est prévu : mysql et postresql.
+Une partie d&#8217;authentification est aussi attendue.</li>
+<li><a class="reference external" href="https://kaji-project.org">Kaji</a> : Création d&#8217;un projet basé sur Shinken, InfluxDB, Grafana, Nagvis et Adagios comme composants principaux.
+L&#8217;idée est d&#8217;avoir une solution de monitoring fonctionnelle et complètement open-source.
+Des paquets RPM et Deb sont disponibles sur le site de projet et une démonstration est en ligne pour essayer.</li>
+</ul>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/></div>
+<div class="section" id="revue-d-evenements">
+<h1>Revue d&#8217;évenements<a class="headerlink" href="#revue-d-evenements" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li>Nettoyage de code - Shinken pep8 party.
+Plusieurs employés de Savoir-faire Linux ont pris quelques heures pour passer dans le code du core de Shinken
+afin de le rendre conforme aux normes de style de code en python (PEP8).
+La principale raison de ceci est de pouvoir améliorer la lisibilité du code ainsi que sa qualité.
+Une vérification est maintenant faite par l&#8217;outil d&#8217;intégration continue (Travis) pour s&#8217;assurer que les règles
+de style sont présentes sur chaque commit et chaque pull request.
+Il est prévu de faire un evénement similaire avec Pylint, un outil d&#8217;analyse plus en profondeur de code.
+Il permettra de détecter par exemple du code inutilisé ou des problèmes de conceptions.</li>
+<li>Premier meetup Montreal-Monitoring.
+Merci à tous ceux qui ont pu venir pour le premier meetup autour de la supervision.
+L&#8217;événement aura été beaucoup plus long que prévu, avec beaucoup de discussion sur les besoins et
+les utilisations de la supervision dans différents métiers.
+Cela nous a permis de rencontrer un public varié, de découvrir d&#8217;autres méthodes et de partager
+les nôtres.</li>
+<li>Second meetup Montreal-Monitoring.
+Merci à ceux qui sont venus. La salle réservée à l&#8217;UQAM convenait mieux que la précédente.
+Nous pensons réutiliser les locaux pour le prochain meetup.
+La <a class="reference external" href="http://savoirfairelinux.github.io/presentations/meetup/2015-03-02/">présentation de Kaji</a> était une première, n&#8217;hésitez pas à faire des retours
+car elle va devenir la présentation officielle.
+Les prochains meetup devraient se concentrer davantage sur des exemples métiers :
+les plugins de supervision représentent une grande richesse.</li>
+</ul>
+</div>
+<div class="section" id="developpments-sfl">
+<h1>Développments SFL<a class="headerlink" href="#developpments-sfl" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li>Check_snow_clearance : vérification du déneigement des rues. Les données sont collectées depuis le site
+infoneige.ca Il sera bientôt disponible sur <a class="reference external" href="http://quebec247.org">Quebec24x7</a></li>
+<li>Supervision applicative : Développement de deux plugins supervisant des serveurs.
+Le premier permet d&#8217;avoir accès aux métriques internes d&#8217;apache via une page web (état des workers etc).
+Le second vérifie la connexion à une base redis et récupère quelques métriques (nombre de clients connectés etc)</li>
+</ul>
+</div>
+
+
+            </div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li><a href="#">Sfl Monitoring News 0.1 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        <img src="_static/header.jpg" alt="header" width="100%" aligh: "top">
+    </div>
+  </body>
+</html>
