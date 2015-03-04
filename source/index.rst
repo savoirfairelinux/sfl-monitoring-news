@@ -6,7 +6,7 @@ Nouveautés logicielles
   de la configuration a été retravaillée, corrections de nombreux bugs, amélioration de la
   documentation, ajout d'une fonctionnalité de snapshot lors d'un problème 
   Actuellement, la branche principale est en développement pour la version 2.4 et inclue majoritairement
-  du nettoyage de code. La prochaine version de Shinken est prévu pour le 31 mars 2015.
+  du nettoyage de code. La prochaine version de Shinken est prévue pour le 31 mars 2015.
   Les prochaines releases devraient être plus fréquentes par la suite : une tous les trois mois. 
    
 
