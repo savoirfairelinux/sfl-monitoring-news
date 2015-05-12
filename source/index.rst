@@ -1,95 +1,98 @@
 Nouveautés logicielles
 ----------------------
 
-* `Shinken`_ : la version 2.2 est sortie le 16 janvier 2015.
-  D'importants changements ont été faits depuis la version 2.0 : la lecture
-  de la configuration a été retravaillée, corrections de nombreux bugs, amélioration de la
-  documentation, ajout d'une fonctionnalité de snapshot lors d'un problème 
-  Actuellement, la branche principale est en développement pour la version 2.4 et inclue majoritairement
-  du nettoyage de code. La prochaine version de Shinken est prévue pour le 31 mars 2015.
-  Les prochaines releases devraient être plus fréquentes par la suite : une tous les trois mois. 
-   
-
-* `InfluxDB`_ : InfluxDB est une technologie de base de données du type TSDB (time series database).
-  Elle est écrite en Go et correspond parfaitement aux besoins rencontrés en supervision.
-  La version 0.9 Beta est sortie en décembre avec la gestion de clustering et de tags.
-  Cette version intègre de gros changements dans l'API d'influxdb et dans les concepts.
-  La nouveauté sur les tags est très intéressante pour la supervision car elle permet d'ajouter
-  des filtres facilement. 
-
- 
-* `Grafana`_ : Grafana est une technologie de dashboard et de graphique avec des grandes capacités.
-  Elle possède une intégration native avec InfluxDB et Graphite. La dernière version stable est 1.9.0
-  Pour la version 2.0, le support d'autres bases de données est prévu : mysql et postresql.
-  Une partie d'authentification est aussi attendue.
+* `Shinken`_ : la version 2.4 est sortie le 5 mai 2015.
+  Initialement prévue pour le 31 mars 2015, la phase de release a finalement duré un mois supplémentaire.
+  La prochaine version devrait être décalée en conséquence. 
+  Les changements apportés sont surtout au niveau de la qualité du code.
+  Les éléments les plus notables sont la conformité du code aux règles pep8,
+  le chargement des modules et les corrections de régressions introduites dans la version 2.2
 
 
-* `Kaji`_ : Création d'un projet basé sur Shinken, InfluxDB, Grafana, Nagvis et Adagios comme composants principaux.
-  L'idée est d'avoir une solution de monitoring fonctionnelle et complètement open-source.
-  Des paquets RPM et Deb sont disponibles sur le site de projet et une démonstration est en ligne pour essayer.
+* `InfluxDB`_ : la version 0.9 devait sortir à la fin du mois d'avril mais a été repoussée à une date ultérieure
+  Cette version introduit un gros changement dans l'API et l'ajout de cluster.
+  Il reste cependant beaucoup de travail pour arriver à la release finale : il y a encore une centaine
+  de tickets ouverts sur le dépôt du projet. Cependant, l'activité du projet est importante,
+  beaucoup d'utilisateurs remontent des bugs et les demandes de changement de code acceptées sont nombreuses.
 
+
+* `Grafana`_ : la version 2.0 est sortie le 20 avril 2015.
+  Cette version implémente un nouveau backend en Go utilisé pour les nouvelles fonctionnalités :
+  l'authentification (panel d'administration) et le partage de dashboard (notion de snapshot dashboard) par exemple
+  Le nouveau backend est utilisé aussi pour le stockage des dashboards, une procédure de migration est disponible
+  pour importer les anciens dashboards (depuis InfluxDB par exemple).
+  Autres nouveautés intéressantes : le rendu côté serveur d'une image (comme le fait Graphite),
+  la possibilité d'avoir un dashboard en favori et les echelles logarithmiques.
+  Grafana fourni des paquets RPM et DEB pour faciliter l'installation dans la plupart des distributions
+  Plus de détails: `Annonce`_, `Nouveautés`_, `Migration`_
+
+
+* `SNMPBooster`_ : c'est un module Shinken destiné à faire des requêtes en SNMP plus efficace qu'avec
+  de simple sondes de supervision. Il permet de grouper les requêtes SNMP afin de réduire la consommation réseau et cpu.
+  Une nouvelle version vient de sortir (1.99.13) suite à des remontées de bug par des utilisateurs.
+  Un package de la dernière version est disponible sur les dépôts du projet Kaji.
 
 .. raw:: html
- 
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
 
-
+    <br/>
+    <br/>
+    <br/>
 
 Revue d'évenements
 ------------------
 
-* Nettoyage de code - Shinken pep8 party.
-  Plusieurs employés de Savoir-faire Linux ont pris quelques heures pour passer dans le code du core de Shinken
-  afin de le rendre conforme aux normes de style de code en python (PEP8).
-  La principale raison de ceci est de pouvoir améliorer la lisibilité du code ainsi que sa qualité.
-  Une vérification est maintenant faite par l'outil d'intégration continue (Travis) pour s'assurer que les règles
-  de style sont présentes sur chaque commit et chaque pull request.
-  Il est prévu de faire un evénement similaire avec Pylint, un outil d'analyse plus en profondeur de code.
-  Il permettra de détecter par exemple du code inutilisé ou des problèmes de conceptions.
-
-
-* Premier meetup Montreal-Monitoring.
-  Merci à tous ceux qui ont pu venir pour le premier meetup autour de la supervision.
-  L'événement aura été beaucoup plus long que prévu, avec beaucoup de discussion sur les besoins et
-  les utilisations de la supervision dans différents métiers.
-  Cela nous a permis de rencontrer un public varié, de découvrir d'autres méthodes et de partager
-  les nôtres.
-
-* Second meetup Montreal-Monitoring. 
-  Merci à ceux qui sont venus. La salle réservée à l'UQAM convenait mieux que la précédente.
-  Nous pensons réutiliser les locaux pour le prochain meetup. 
-  La `présentation de Kaji`_ était une première, n'hésitez pas à faire des retours
-  car elle va devenir la présentation officielle. 
-  Les prochains meetup devraient se concentrer davantage sur des exemples métiers : 
-  les plugins de supervision représentent une grande richesse. 
+* Pycon Montréal 2015: `Finding Spammers & Scammers through Rate Tracking with Python & Redis`_
+  `Talk (anglais)`_ traitant des problèmes rencontrés par des employés d'Evenbrite pour détecter
+  par exemple les dénis de service ou les événements populaires.
+  La solution présentée permet de collecter des actions réalisées et de les compter sur des périodes de temps.
+  Le stockage des données et fait dans une base Redis et le schéma est similaire au principe de Carbon (projet Graphite):
+  on a un compteur pour un intervalle de temps donné (pas de temps atomique pour une donnée). Cela permet un
+  gain de place de stockage.
+  Ces données collectées peuvent être ensuite analysées par un systeme (une intelligence artificielle, non décrit dans la présentation)
+  afin d'extraire des tendances selon le type d'actions et de déduire s'il s'agit d'une activité "normale" pour le site ou non.
+  Quelques détails sur Redis et le principe de "hit" `ici`_
 
 
 
 Développments SFL
 -----------------
 
-* Check_snow_clearance : vérification du déneigement des rues. Les données sont collectées depuis le site 
-  infoneige.ca Il sera bientôt disponible sur `Quebec24x7`_
+* `Surveil`_: Un projet orienté pour Openstack afin d'offrir une API de monitoring.
+  Elle est pour l'instant basée sur Shinken pour le moteur de supervision.
+  L'API elle même est developpée python, basée sur le framework d'API REST Pecan.
+  L'objectif est de centraliser les requêtes au moteur de supervision et aux bases contenant
+  les métriques et de fournir de l'authentification.
+  La première release est prévue pour le mois de septembre
 
-* Supervision applicative : Développement de deux plugins supervisant des serveurs. 
-  Le premier permet d'avoir accès aux métriques internes d'apache via une page web (état des workers etc).
-  Le second vérifie la connexion à une base redis et récupère quelques métriques (nombre de clients connectés etc)
+
+* `Kaji`_ : Le projet est toujours dans une version béta (0.2). La prochaine version de Kaji est prévue pour suivre
+  le projet Surveil. En effet, l'API va venir remplacer Adagios pour la partie REST. Pour l'interface graphique,
+  un frontend en Angular JS (`Bansho`_) est en cours de développement, il utilisera l'API pour récupérer les données.
+
+
+* Supervision applicative : Développement du plugin check_influxdb
+  Le plugin permet d'obtenir des statistiques sur une base de données InfluxDB :
+  le temps de fonctionnement, le nombre d'écritures / lectures et la mémoire utilisée font
+  partie des données disponibles.
+
+
+* Packaging : Une mise à jour du packaging a été faite pour des modules Shinken,
+  des packs de configuration Shinken et des plugins de supervision
+  Les paquets ont été mis sur les dépôts du projet Kaji.
 
 
 
 .. _Shinken: http://www.shinken-monitoring.org
 .. _InfluxDB: http://influxdb.com
 .. _Grafana: https://grafana.org
+.. _Annonce: http://grafana.org/blog/2015/04/20/Grafana-2-Released.html
+.. _Nouveautés: http://docs.grafana.org/guides/whats-new-in-v2/
+.. _Migration: http://docs.grafana.org/installation/migrating_to2/
+.. _SNMPBooster: https://github.com/savoirfairelinux/mod-booster-snmp.git
+.. _Finding Spammers & Scammers through Rate Tracking with Python & Redis: https://us.pycon.org/2015/schedule/presentation/383/
+.. _Talk (anglais): https://www.youtube.com/watch?v=tIBkiXvEAC0
+.. _ici: https://engineering.eventbrite.com/heavy-hitters-in-redis/
+.. _Surveil: https://github.com/stackforge/surveil
 .. _Kaji: https://kaji-project.org
-.. _page: http://www.meetup.com/Montreal-Monitoring
-.. _Quebec24x7: http://quebec247.org
-.. _présentation de Kaji: http://savoirfairelinux.github.io/presentations/meetup/2015-03-02/
+.. _Bansho: https://github.com/stackforge/bansho
 
