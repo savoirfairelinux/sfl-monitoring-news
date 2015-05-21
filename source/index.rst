@@ -53,6 +53,9 @@ Revue d'évenements
   Quelques détails sur Redis et le principe de "hit" `ici`_
 
 
+* `Meetup Montreal Monitoring`_: Prochain événement le mardi 9 juin 2015 dans les locaux de l'UQAM.
+  De nouveaux exemples de supervision seront présentés : supervision de logs,  supervision des APIs Openstack,
+  supervision d'Influxdb. Une présentation de Surveil est aussi prévue (voir ci-dessous).
 
 Développments SFL
 -----------------
@@ -93,6 +96,7 @@ Développments SFL
 .. _Talk (anglais): https://www.youtube.com/watch?v=tIBkiXvEAC0
 .. _ici: https://engineering.eventbrite.com/heavy-hitters-in-redis/
 .. _Surveil: https://github.com/stackforge/surveil
+.. _Meetup Montreal Monitoring: https://www.meetup.com/Montreal-Monitoring
 .. _Kaji: https://kaji-project.org
 .. _Bansho: https://github.com/stackforge/bansho
 
