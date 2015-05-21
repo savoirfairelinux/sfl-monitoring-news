@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nouveautés logicielles &mdash; Sfl Monitoring News</title>
+    
+    <link rel="stylesheet" href="_static/sfl-monitoring-news.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="shortcut icon" href="_static/sfl.ico"/>
+    <link rel="top" title="Sfl Monitoring News" href="#" />
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
+
+  </head>
+  <body>
+    <div class="header" style="position: relative; left: 0; top: 0;">
+        <img src="_static/header.jpg" alt="header" width="100%" style="position: relative; top: 0; left: 0;">
+        <div style="position: absolute; top: 50%; left: 2.5%;">SUPERVISION</div>
+        <img src="_static/sfl.png" height="35%" alt="Savoir-Faire Linux" style="position: absolute; top: 35%; left: 70%;">
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li><a href="#">Sfl Monitoring News</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="document">
+            <div class="body">
+                
+  <div class="section" id="nouveautes-logicielles">
+<h1>Nouveautés logicielles<a class="headerlink" href="#nouveautes-logicielles" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><a class="reference external" href="http://www.shinken-monitoring.org">Shinken</a> : la version 2.4 est sortie le 5 mai 2015.
+Initialement prévue pour le 31 mars 2015, la phase de release a finalement duré un mois supplémentaire.
+La prochaine version devrait être décalée en conséquence.
+Les changements apportés sont surtout au niveau de la qualité du code.
+Les éléments les plus notables sont la conformité du code aux règles pep8,
+le chargement des modules et les corrections de régressions introduites dans la version 2.2</li>
+<li><a class="reference external" href="http://influxdb.com">InfluxDB</a> : la version 0.9 devait sortir à la fin du mois d&#8217;avril mais a été repoussée à une date ultérieure
+Cette version introduit un gros changement dans l&#8217;API et l&#8217;ajout de cluster.
+Il reste cependant beaucoup de travail pour arriver à la release finale : il y a encore une centaine
+de tickets ouverts sur le dépôt du projet. Cependant, l&#8217;activité du projet est importante,
+beaucoup d&#8217;utilisateurs remontent des bugs et les demandes de changement de code acceptées sont nombreuses.</li>
+<li><a class="reference external" href="https://grafana.org">Grafana</a> : la version 2.0 est sortie le 20 avril 2015.
+Cette version implémente un nouveau backend en Go utilisé pour les nouvelles fonctionnalités :
+l&#8217;authentification (panel d&#8217;administration) et le partage de dashboard (notion de snapshot dashboard) par exemple
+Le nouveau backend est utilisé aussi pour le stockage des dashboards, une procédure de migration est disponible
+pour importer les anciens dashboards (depuis InfluxDB par exemple).
+Autres nouveautés intéressantes : le rendu côté serveur d&#8217;une image (comme le fait Graphite),
+la possibilité d&#8217;avoir un dashboard en favori et les echelles logarithmiques.
+Grafana fourni des paquets RPM et DEB pour faciliter l&#8217;installation dans la plupart des distributions
+Plus de détails: <a class="reference external" href="http://grafana.org/blog/2015/04/20/Grafana-2-Released.html">Annonce</a>, <a class="reference external" href="http://docs.grafana.org/guides/whats-new-in-v2/">Nouveautés</a>, <a class="reference external" href="http://docs.grafana.org/installation/migrating_to2/">Migration</a></li>
+<li><a class="reference external" href="https://github.com/savoirfairelinux/mod-booster-snmp.git">SNMPBooster</a> : c&#8217;est un module Shinken destiné à faire des requêtes en SNMP plus efficace qu&#8217;avec
+de simple sondes de supervision. Il permet de grouper les requêtes SNMP afin de réduire la consommation réseau et cpu.
+Une nouvelle version vient de sortir (1.99.13) suite à des remontées de bug par des utilisateurs.
+Un package de la dernière version est disponible sur les dépôts du projet Kaji.</li>
+</ul>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/></div>
+<div class="section" id="revue-d-evenements">
+<h1>Revue d&#8217;évenements<a class="headerlink" href="#revue-d-evenements" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li>Pycon Montréal 2015: <a class="reference external" href="https://us.pycon.org/2015/schedule/presentation/383/">Finding Spammers &amp; Scammers through Rate Tracking with Python &amp; Redis</a>
+<a class="reference external" href="https://www.youtube.com/watch?v=tIBkiXvEAC0">Talk (anglais)</a> traitant des problèmes rencontrés par des employés d&#8217;Evenbrite pour détecter
+par exemple les dénis de service ou les événements populaires.
+La solution présentée permet de collecter des actions réalisées et de les compter sur des périodes de temps.
+Le stockage des données et fait dans une base Redis et le schéma est similaire au principe de Carbon (projet Graphite):
+on a un compteur pour un intervalle de temps donné (pas de temps atomique pour une donnée). Cela permet un
+gain de place de stockage.
+Ces données collectées peuvent être ensuite analysées par un systeme (une intelligence artificielle, non décrit dans la présentation)
+afin d&#8217;extraire des tendances selon le type d&#8217;actions et de déduire s&#8217;il s&#8217;agit d&#8217;une activité &#8220;normale&#8221; pour le site ou non.
+Quelques détails sur Redis et le principe de &#8220;hit&#8221; <a class="reference external" href="https://engineering.eventbrite.com/heavy-hitters-in-redis/">ici</a></li>
+<li><a class="reference external" href="https://www.meetup.com/Montreal-Monitoring">Meetup Montreal Monitoring</a>: Prochain événement le mardi 9 juin 2015 dans les locaux de l&#8217;UQAM.
+De nouveaux exemples de supervision seront présentés : supervision de logs,  supervision des APIs Openstack,
+supervision d&#8217;Influxdb. Une présentation de Surveil est aussi prévue (voir ci-dessous).</li>
+</ul>
+</div>
+<div class="section" id="developpments-sfl">
+<h1>Développments SFL<a class="headerlink" href="#developpments-sfl" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><a class="reference external" href="https://github.com/stackforge/surveil">Surveil</a>: Un projet orienté pour Openstack afin d&#8217;offrir une API de monitoring.
+Elle est pour l&#8217;instant basée sur Shinken pour le moteur de supervision.
+L&#8217;API elle même est developpée python, basée sur le framework d&#8217;API REST Pecan.
+L&#8217;objectif est de centraliser les requêtes au moteur de supervision et aux bases contenant
+les métriques et de fournir de l&#8217;authentification.
+La première release est prévue pour le mois de septembre</li>
+<li><a class="reference external" href="https://kaji-project.org">Kaji</a> : Le projet est toujours dans une version béta (0.2). La prochaine version de Kaji est prévue pour suivre
+le projet Surveil. En effet, l&#8217;API va venir remplacer Adagios pour la partie REST. Pour l&#8217;interface graphique,
+un frontend en Angular JS (<a class="reference external" href="https://github.com/stackforge/bansho">Bansho</a>) est en cours de développement, il utilisera l&#8217;API pour récupérer les données.</li>
+<li>Supervision applicative : Développement du plugin check_influxdb
+Le plugin permet d&#8217;obtenir des statistiques sur une base de données InfluxDB :
+le temps de fonctionnement, le nombre d&#8217;écritures / lectures et la mémoire utilisée font
+partie des données disponibles.</li>
+<li>Packaging : Une mise à jour du packaging a été faite pour des modules Shinken,
+des packs de configuration Shinken et des plugins de supervision
+Les paquets ont été mis sur les dépôts du projet Kaji.</li>
+</ul>
+</div>
+
+
+            </div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li><a href="#">Sfl Monitoring News</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        <img src="_static/header.jpg" alt="header" width="100%" aligh: "top">
+    </div>
+  </body>
+</html>
