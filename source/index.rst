@@ -42,13 +42,13 @@ Revue d'évenements
 ------------------
 
 * Pycon Montréal 2015: `Finding Spammers & Scammers through Rate Tracking with Python & Redis`_
-  `Talk (anglais)`_ traitant des problèmes rencontrés par des employés d'Evenbrite pour détecter
+  `Talk (anglais)`_ traitant des problèmes rencontrés par des employés d'Eventbrite pour détecter
   par exemple les dénis de service ou les événements populaires.
   La solution présentée permet de collecter des actions réalisées et de les compter sur des périodes de temps.
   Le stockage des données et fait dans une base Redis et le schéma est similaire au principe de Carbon (projet Graphite):
   on a un compteur pour un intervalle de temps donné (pas de temps atomique pour une donnée). Cela permet un
   gain de place de stockage.
-  Ces données collectées peuvent être ensuite analysées par un systeme (une intelligence artificielle, non décrit dans la présentation)
+  Ces données collectées peuvent être ensuite analysées par un système (une intelligence artificielle, non décrite dans la présentation)
   afin d'extraire des tendances selon le type d'actions et de déduire s'il s'agit d'une activité "normale" pour le site ou non.
   Quelques détails sur Redis et le principe de "hit" `ici`_
 
@@ -65,7 +65,7 @@ Développments SFL
   L'API elle même est developpée python, basée sur le framework d'API REST Pecan.
   L'objectif est de centraliser les requêtes au moteur de supervision et aux bases contenant
   les métriques et de fournir de l'authentification.
-  La première release est prévue pour le mois de septembre
+  La première release est prévue pour le mois de septembre.
 
 
 * `Kaji`_ : Le projet est toujours dans une version béta (0.2). La prochaine version de Kaji est prévue pour suivre
